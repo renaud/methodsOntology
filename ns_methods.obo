@@ -12,6 +12,8 @@ default-namespace: ksc_m
 remark: Editors: Mihail Bota, Tom Gillespie
 remark: Version: 0.3
 
+synonymtypedef: ACRONYM "acronym" BROAD
+
 [Term]
 id: KSC_M:000001
 name: Method
@@ -97,7 +99,7 @@ synonym: "Nissl staining protocol" EXACT [birnlex:2247]
 xref: KSC_M:0000010 "Nissl method"
 is_a: KSC_M:000009 ! Basophilic stain method
 created_by: mihailbota
-remark: acronym: Nissl
+synonym: "Nissl" BROAD ACRONYM []
 
 [Term]
 id: KSC_M:0000011
@@ -106,7 +108,7 @@ def: "Histochemical method for labeling the neurons. Hematoxilin labels the cell
 synonym: "Hematoxilin and eosin stain" EXACT []
 is_a: nlx_inv:20090605 ! Histochemical method
 created_by: mihailbota
-remark: acronym: H&E
+synonym: "H&E" BROAD ACRONYM []
 
 [Term]
 id: KSC_M:0000012
@@ -115,7 +117,7 @@ def: "Histochemical method that stains in bluish color the myelin around axons."
 synonym: "Luxol Fast Blue staining" EXACT []
 is_a: nlx_inv:20090605 ! Histochemical method
 created_by: mihailbota
-remark: acronym: LFB
+synonym: "LFB" BROAD ACRONYM []
 
 [Term]
 id: birnlex:2243
@@ -126,7 +128,7 @@ synonym: "Golgi staining protocol" EXACT [birnlex:2243]
 xref: KSC_M:0000013 "Golgi method"
 is_a: KSC_M:0000021 ! Cytochemical method
 created_by: mihailbota
-remark: acronym: Golgi
+synonym: "Golgi" BROAD ACRONYM []
 
 [Term]
 id: KSC_M:0000014
@@ -135,7 +137,7 @@ def: "Variant of the Golgi method that uses mercury salts instead of silver. The
 is_a: KSC_M:0000021 ! Cytochemical method
 relationship: modified_from birnlex:2243 ! Golgi method
 created_by: mihailbota
-remark: acronym: Golgi-Cox
+synonym: "Golgi-Cox" BROAD ACRONYM []
 
 [Term]
 id: KSC_M:0000015
@@ -144,7 +146,7 @@ def: "Modification of the Golgi method that is faster than Golgi-Cox method. In 
 is_a: KSC_M:0000021 ! Cytochemical method
 relationship: modified_from birnlex:2243 ! Golgi method
 created_by: mihailbota
-remark: acronym: Rapid Golgi
+synonym: "Rapid Golgi" BROAD ACRONYM []
 
 [Term]
 id: KSC_M:0000016
@@ -153,14 +155,14 @@ def: "Modification of the Golgi method where osmium that is used in rapid Golgi 
 is_a: KSC_M:0000021 ! Cytochemical method
 relationship: modified_from birnlex:2243 ! Golgi method
 created_by: mihailbota
-remark: acronym: Golgi-Kopsch
+synonym: "Golgi-Kopsch" BROAD ACRONYM []
 
 [Term]
 id: KSC_M:0000017
 name: Timm-Danschle method
 def: "Based on the property of the sulphide silver to reduce the metals present in trace amounts in cells to the corresponding metal sulphide and silver. The latter will form grains. The application of different types of chelating factors results in the bleaching of cells, or the opposite. It is suited for visualization at the light and electron microscope of synapses." []
 created_by: mihailbota
-remark: acronym: T-D
+synonym: "T-D" BROAD ACRONYM []
 
 [Term]
 id: OBI:0000854
@@ -170,7 +172,7 @@ synonym: "western blot analysis" EXACT [OBI:0000854]
 xref: KSC_M:0000018 "Western Blot"
 is_a: KSC_M:00000225 ! Nucleic acids and proteins measurement
 created_by: mihailbota
-remark: acronym: WB
+synonym: "WB" BROAD ACRONYM []
 
 [Term]
 id: KSC_M:0000019
@@ -178,7 +180,7 @@ name: Kluver-Barrera
 def: "Extension of the Luxol Fast Blue method; the nuclei cell bodies are counterlabeled with cresyl violet or thionin." []
 is_a: nlx_inv:20090605 ! Histochemical method
 created_by: mihailbota
-remark: acronym: K-B
+synonym: "K-B" BROAD ACRONYM []
 
 [Term]
 id: nlx_inv:20090605
@@ -249,14 +251,14 @@ name: Avidin-Biotinylated HRP Complex method
 def: "Immunohistochemical method that uses horseradish peroxidase (HRP) for visualization with the light microscope, and biotin conjugated with secondary antibodies." []
 is_a: KSC_M:0000027 ! Immunohistochemistry for light microscopy
 created_by: mihailbota
-remark: acronym: ABC
+synonym: "ABC" BROAD ACRONYM []
 
 [Term]
 id: KSC_M:0000029
 name: Peroxidase-antiperoxidase method
 def: "Immunohistochemical method that uses the peroxidase-antiperoxidase complex to recognize the secondary antibody. This conjugated complex interacts enzymatically with specific molecules (e.g. HRP and DAB) and the colored product can be visualized with light microscope." []
 created_by: mihailbota
-remark: acronym: PAP
+synonym: "PAP" BROAD ACRONYM []
 
 [Term]
 id: KSC_M:0000030
@@ -303,7 +305,7 @@ relationship: always_requires KSC_M:000002 ! Gray matter tissue preparation
 relationship: requires KSC_M:00000224 ! Iontophoretic injection
 relationship: requires OBI:0302912 ! Electroporation
 created_by: mihailbota
-remark: acronym: LY
+synonym: "LY" BROAD ACRONYM []
 
 [Term]
 id: KSC_M:0000036
@@ -379,7 +381,7 @@ xref: KSC_M:0000044 "In situ hybridization"
 is_a: KSC_M:00000225 ! Nucleic acids and proteins measurement
 is_a: OBI:0302887 ! Staining method
 created_by: mihailbota
-remark: acronym: ISH
+synonym: "ISH" BROAD ACRONYM []
 
 [Term]
 id: ERO:0001168
@@ -388,7 +390,7 @@ def: "Method used to examine location of DNA within chromosomes, and identify ch
 synonym: "fluorescent in situ hybridization " EXACT [ERO:0001168]
 xref: KSC_M:0000045 "Fluorescent in situ hybridization"
 created_by: mihailbota
-remark: acronym: FISH
+synonym: "FISH" BROAD ACRONYM []
 
 [Term]
 id: OBI:0000415
@@ -398,7 +400,7 @@ synonym: "polymerase chain reaction" EXACT [OBI:0000415]
 xref: KSC_M:0000046 "Polymerase chain reaction"
 is_a: KSC_M:00000225 ! Nucleic acids and proteins measurement
 created_by: mihailbota
-remark: acronym: PCR
+synonym: "PCR" BROAD ACRONYM []
 
 [Term]
 id: ERO:0001075
@@ -408,7 +410,7 @@ synonym: "real-time PCR" EXACT [ERO:0001075]
 xref: KSC_M:0000047 "Real time polymerase chain reaction"
 is_a: OBI:0000415 ! Polymerase chain reaction
 created_by: mihailbota
-remark: acronym: qt-PCR
+synonym: "qt-PCR" BROAD ACRONYM []
 
 [Term]
 id: KSC_M:0000048
@@ -416,7 +418,7 @@ name: Traditional PCR
 def: "The original PCR method, where amplified PCR products are detected at the end of all cycles. The method can not provide quantitative measures, but semi-quantitative, as a ratio between the yielded signal vs. the known signal of known concentrations. " []
 is_a: OBI:0000415 ! Polymerase chain reaction
 created_by: mihailbota
-remark: acronym: t-PCR
+synonym: "t-PCR" BROAD ACRONYM []
 
 [Term]
 id: OBI:0000552
@@ -426,7 +428,7 @@ synonym: "reverse transcribed polymerase chain reaction" EXACT [OBI:0000552]
 xref: KSC_M:0000049 "Reverse transcription polymerase chain reaction"
 is_a: OBI:0000415 ! Polymerase chain reaction
 created_by: mihailbota
-remark: acronym: RT-PCR
+synonym: "RT-PCR" BROAD ACRONYM []
 
 [Term]
 id: KSC_M:0000050
@@ -456,7 +458,7 @@ name: Quantitative reverse-transcription polymerase chain reaction
 def: "A very sensitive rt-PCR method used for detection and measurement of RNA and mRNA. " []
 is_a: OBI:0000552 ! Reverse transcription polymerase chain reaction
 created_by: mihailbota
-remark: acronym: qrt-PCR
+synonym: "qrt-PCR" BROAD ACRONYM []
 
 [Term]
 id: KSC_M:0000054
@@ -478,7 +480,7 @@ name: Multiplex polymerase chain reaction
 def: "PCR method that contains multiple primers, therefore it is used to detect and measure several genes simultaneously. It is used for gene coexpression in a single cell." []
 is_a: OBI:0000415 ! Polymerase chain reaction
 created_by: mihailbota
-remark: acronym: m-PCR
+synonym: "m-PCR" BROAD ACRONYM []
 
 [Term]
 id: KSC_M:0000057
@@ -487,7 +489,7 @@ def: "RT-PCR method for detection and measurement of several genes RNA." []
 synonym: "reverse transcribed polymerase chain reaction" EXACT [OBI:0000552]
 is_a: ERO:0001075 ! Real time polymerase chain reaction
 created_by: mihailbota
-remark: acronym: RT-mPCR
+synonym: "RT-mPCR" BROAD ACRONYM []
 
 [Term]
 id: ERO:0001298
@@ -585,7 +587,7 @@ name: Enyzme-linked immunosorbent assay
 def: "Biochemical assay where a specific antibody binds to a protein of interest to mark the presence and measure the quantity of the protein in a sample." []
 is_a: KSC_M:00000225 ! Nucleic acids and proteins measurement
 created_by: mihailbota
-remark: acronym: ELISA
+synonym: "ELISA" BROAD ACRONYM []
 
 [Term]
 id: ERO:0000652
@@ -595,7 +597,7 @@ synonym: "radioimmunoassay" EXACT [ERO:0000652]
 xref: KSC_M:0000070 "Radioimmunoassay"
 is_a: KSC_M:00000225 ! Nucleic acids and proteins measurement
 created_by: mihailbota
-remark: acronym: RIA
+synonym: "RIA" BROAD ACRONYM []
 
 [Term]
 id: OBI:0000690
@@ -655,7 +657,7 @@ xref: KSC_M:0000077 "Chromatin immunoprecipitation"
 is_a: OBI:0000690 ! Immunoprecipitation
 relationship: always_requires KSC_M:0000072 ! Chromatography
 created_by: mihailbota
-remark: acronym: ChIP
+synonym: "ChIP" BROAD ACRONYM []
 
 [Term]
 id: KSC_M:0000078
@@ -672,7 +674,7 @@ synonym: "Mass spectrometry assay" EXACT [OBI:0000470]
 xref: KSC_M:0000079 "Mass spectometry"
 is_a: KSC_M:00000225 ! Nucleic acids and proteins measurement
 created_by: mihailbota
-remark: acronym: MS
+synonym: "MS" BROAD ACRONYM []
 
 [Term]
 id: KSC_M:0000080
@@ -680,7 +682,7 @@ name: Matrix-assisted laser desorption ionization
 def: "Technique used to bring the aminoacids sequence solution in gaseous state and charged. The sequence of interest is mixed with a UV-absorbing organic acid and dried on a metal slide. The sample is irradiated with a UV laser, causing the solution to go into the gas phase. The aminoacids sequence also becomes charged. This method precludes the mass spectometry technique." []
 is_a: KSC_M:00000225 ! Nucleic acids and proteins measurement
 created_by: mihailbota
-remark: acronym: MALDI
+synonym: "MALDI" BROAD ACRONYM []
 
 [Term]
 id: ERO:0001331
@@ -690,7 +692,7 @@ synonym: "electrospray ionization" EXACT [ERO:0001331]
 xref: KSC_M:0000081 "Electrospray ionization"
 is_a: KSC_M:00000225 ! Nucleic acids and proteins measurement
 created_by: mihailbota
-remark: acronym: ESI
+synonym: "ESI" BROAD ACRONYM []
 
 [Term]
 id: KSC_M:0000082
@@ -698,7 +700,7 @@ name: Collision induced dissociation
 def: "Technique used to fragment proteins that have the mass to charge ratio identical, by bombarding with atoms (e.g. argon, nitrogen). The resulting fragments are the run through mass spectometers. The proteins are then reconstituted by overlapping the fragments." []
 is_a: KSC_M:00000225 ! Nucleic acids and proteins measurement
 created_by: mihailbota
-remark: acronym: CID
+synonym: "CID" BROAD ACRONYM []
 
 [Term]
 id: KSC_M:0000083
@@ -715,7 +717,7 @@ synonym: "electrophoretic gel mobility shift" EXACT [ERO:0000907]
 xref: KSC_M:0000084 "Electrophoretic mobility shift assay"
 is_a: KSC_M:00000225 ! Nucleic acids and proteins measurement
 created_by: mihailbota
-remark: acronym: EMSA
+synonym: "EMSA" BROAD ACRONYM []
 
 [Term]
 id: KSC_M:0000085
@@ -764,7 +766,7 @@ synonym: "differential interference contrast microscopy" EXACT [ERO:0001637]
 xref: KSC_M:0000090 "Differential interference contrast microscopy"
 is_a: ERO:0000215 ! Light microscopy
 created_by: mihailbota
-remark: acronym: DIC
+synonym: "DIC" BROAD ACRONYM []
 
 [Term]
 id: ERO:0001356
@@ -810,7 +812,7 @@ synonym: "Total internal reflection imaging protocol" EXACT [birnlex:2264]
 xref: KSC_M:0000095 "Total internal reflection fluorescent microscopy"
 is_a: ERO:0001356 ! Fluorescence microscopy
 created_by: mihailbota
-remark: acronym: TIRF
+synonym: "TIRF" BROAD ACRONYM []
 
 [Term]
 id: ERO:0000328
@@ -820,7 +822,7 @@ synonym: "electron microscopy" EXACT [ERO:0000328]
 xref: KSC_M:0000096 "Electron microscopy"
 is_a: ERO:0000201 ! Microscopy
 created_by: mihailbota
-remark: acronym: EM
+synonym: "EM" BROAD ACRONYM []
 
 [Term]
 id: ERO:0000329
@@ -830,7 +832,7 @@ synonym: "transmission electron microscopy" EXACT [ERO:0000329]
 xref: KSC_M:0000097 "Transmission electron microscopy"
 is_a: ERO:0000328 ! Electron microscopy
 created_by: mihailbota
-remark: acronym: TEM
+synonym: "TEM" BROAD ACRONYM []
 
 [Term]
 id: ERO:0000330
@@ -840,7 +842,7 @@ synonym: "scanning electron microscopy" EXACT [ERO:0000330]
 xref: KSC_M:0000098 "Scanning electron microscopy"
 is_a: ERO:0000328 ! Electron microscopy
 created_by: mihailbota
-remark: acronym: SEM
+synonym: "SEM" BROAD ACRONYM []
 
 [Term]
 id: KSC_M:0000099
@@ -848,7 +850,7 @@ name: Infrared differential interference contrast microscopy
 def: "Variant of the differentation interference contrast microscopy where the instead of light, infrared waves are used. This method is a combination of microscopy and spectrometry for infrared, which includes Fourier Transformation for transformation of IR into visible light." []
 is_a: KSC_M:000004 ! Visualization method
 created_by: mihailbota
-remark: acronym: IR-DIC
+synonym: "IR-DIC" BROAD ACRONYM []
 
 [Term]
 id: birnlex:2865
@@ -907,7 +909,7 @@ def: "Method of labeling active neurons with membrane-permeant calcium-indicator
 is_a: KSC_M:00000107 ! Impermeable calcium-sensitive dyes imaging
 relationship: always_requires OBI:0302912 ! Electroporation
 created_by: mihailbota
-remark: acronym: MCBL
+synonym: "MCBL" BROAD ACRONYM []
 
 [Term]
 id: KSC_M:00000107
@@ -932,7 +934,7 @@ name: Genetic encoders of calcium imaging
 def: "Generic class of methods that use chimeric fluorescent proteins (opsins) that can be used to monitor variations of intracellular calcium concentrations. GECIs consist of a calcium-binding domain (calmodulin or troponin C), fused to one or two fluorescent proteins." []
 is_a: nlx:152558 ! Optogenetics
 created_by: mihailbota
-remark: acronym: GECI
+synonym: "GECI" BROAD ACRONYM []
 
 [Term]
 id: KSC_M:00000110
@@ -940,7 +942,7 @@ name: Single fluorescent protein genetic encoder of calcium imaging
 def: "Optogenetic method that uses a single fluorescent protein to visualize intracellular calcium. Usually, the fluorescence sensitivity is increased when the fluorescent protein is split in two (circularly permutation) and its conformation is modulated by calcium bindingdependent changes in the chromophore environment." []
 is_a: KSC_M:00000109 ! Genetic encoders of calcium imaging
 created_by: mihailbota
-remark: acronym: single-FP GECI
+synonym: "single-FP GECI" BROAD ACRONYM []
 
 [Term]
 id: KSC_M:00000111
@@ -948,7 +950,7 @@ name: Two fluorescent proteins genetic encoder of calcium imaging
 def: "Optogenetic method that uses two variants of a fluorescent protein modified in such way that their spectral properties allow a specific resonance transfer energy (Forster FRET)." []
 is_a: KSC_M:00000109 ! Genetic encoders of calcium imaging
 created_by: mihailbota
-remark: acronym: two-FP GECI
+synonym: "two-FP GECI" BROAD ACRONYM []
 
 [Term]
 id: KSC_M:00000112
@@ -1079,7 +1081,7 @@ relationship: always_requires KSC_M:000002 ! Gray matter tissue preparation
 relationship: requires KSC_M:00000223 ! Pressure injection
 relationship: requires KSC_M:00000224 ! Iontophoretic injection
 created_by: mihailbota
-remark: acronym: HRP
+synonym: "HRP" BROAD ACRONYM []
 
 [Term]
 id: KSC_M:00000128
@@ -1112,7 +1114,7 @@ relationship: always_requires KSC_M:000002 ! Gray matter tissue preparation
 relationship: requires KSC_M:00000223 ! Pressure injection
 relationship: requires KSC_M:00000224 ! Iontophoretic injection
 created_by: mihailbota
-remark: acronym: WGA-HRP
+synonym: "WGA-HRP" BROAD ACRONYM []
 
 [Term]
 id: KSC_M:00000131
@@ -1123,7 +1125,7 @@ relationship: always_requires KSC_M:000002 ! Gray matter tissue preparation
 relationship: requires KSC_M:00000223 ! Pressure injection
 relationship: requires KSC_M:00000224 ! Iontophoretic injection
 created_by: mihailbota
-remark: acronym: CTB
+synonym: "CTB" BROAD ACRONYM []
 
 [Term]
 id: KSC_M:00000132
@@ -1155,7 +1157,7 @@ relationship: always_requires KSC_M:000002 ! Gray matter tissue preparation
 relationship: requires KSC_M:00000223 ! Pressure injection
 relationship: requires KSC_M:00000224 ! Iontophoretic injection
 created_by: mihailbota
-remark: acronym: WGAapoHRP
+synonym: "WGAapoHRP" BROAD ACRONYM []
 
 [Term]
 id: KSC_M:00000135
@@ -1163,7 +1165,7 @@ name: diOlistic labeling
 def: "Neurons labeling method with lipophilic carbocyanine dyes that are injected into the cells of interest. These dyes label efficiently the neurons membranes, providing a more accurate view of dendrites and dendritic spines. It can be used in combination with retrograde tracers." []
 is_a: birnlex:2136 ! Intracellular labeling method
 created_by: mihailbota
-remark: acronym: diOListic
+synonym: "diOListic" BROAD ACRONYM []
 
 [Term]
 id: KSC_M:00000136
@@ -1192,7 +1194,7 @@ name: Biotinylated dextran amine tracing
 def: "Anterograde tracing method using BDA as marker. The 10kDA BDA is one of the best markers for anterograde tracing in different species, while the 3kDA BDA is used for cell filling, and for retrograde tracing." []
 is_a: KSC_M:00000123 ! Anterograde tracing
 created_by: mihailbota
-remark: acronym: BDA
+synonym: "BDA" BROAD ACRONYM []
 
 [Term]
 id: KSC_M:00000139
@@ -1200,7 +1202,7 @@ name: Phaseolus vulgaris leucoagglutinin tracing
 def: "Anterograde tracing method using PHAL as marker, which is considered the "gold standard" at least in small animals. PHA-L labels the axons only anterogradely when iontophoretic injections are employed, and there very few cases of dendrites labeling when the marker was pressure-injected." []
 is_a: KSC_M:00000123 ! Anterograde tracing
 created_by: mihailbota
-remark: acronym: PHAL
+synonym: "PHAL" BROAD ACRONYM []
 
 [Term]
 id: KSC_M:00000140
@@ -1211,7 +1213,7 @@ relationship: always_requires KSC_M:000002 ! Gray matter tissue preparation
 relationship: requires KSC_M:00000223 ! Pressure injection
 relationship: requires KSC_M:00000224 ! Iontophoretic injection
 created_by: mihailbota
-remark: acronym: COIN
+synonym: "COIN" BROAD ACRONYM []
 
 [Term]
 id: KSC_M:00000141
@@ -1222,7 +1224,7 @@ relationship: always_requires KSC_M:000002 ! Gray matter tissue preparation
 relationship: requires KSC_M:00000223 ! Pressure injection
 relationship: requires KSC_M:00000224 ! Iontophoretic injection
 created_by: mihailbota
-remark: acronym: DCOIN
+synonym: "DCOIN" BROAD ACRONYM []
 
 [Term]
 id: KSC_M:00000142
@@ -1315,7 +1317,7 @@ synonym: "magnetic resonance imaging" EXACT [ERO:0001235]
 xref: KSC_M:00000153 "Magnetic resonance imaging"
 is_a: KSC_M:00000152 ! Bioimaging
 created_by: mihailbota
-remark: acronym: MRI
+synonym: "MRI" BROAD ACRONYM []
 
 [Term]
 id: nlx_inv:090913
@@ -1325,7 +1327,7 @@ synonym: "Diffusion magnetic resonance imaging" EXACT [nlx_inv:090913]
 xref: KSC_M:00000154 "Diffusion magnetic resonance imaging"
 is_a: ERO:0001235 ! Magnetic resonance imaging
 created_by: mihailbota
-remark: acronym: dMRI
+synonym: "dMRI" BROAD ACRONYM []
 
 [Term]
 id: nlx_inv:090916
@@ -1335,7 +1337,7 @@ synonym: "Diffusion weighted magnetic resonance imaging assay" EXACT [nlx_inv:09
 xref: KSC_M:00000155 "Diffusion weighted imaging"
 is_a: nlx_inv:090913 ! Diffusion magnetic resonance imaging
 created_by: mihailbota
-remark: acronym: DWI
+synonym: "DWI" BROAD ACRONYM []
 
 [Term]
 id: nlx_inv:090915
@@ -1345,7 +1347,7 @@ synonym: "Diffusion tensor imaging assay" EXACT [nlx_inv:090915]
 xref: KSC_M:00000156 "Diffusion tensor imaging"
 is_a: nlx_inv:090913 ! Diffusion magnetic resonance imaging
 created_by: mihailbota
-remark: acronym: DTI
+synonym: "DTI" BROAD ACRONYM []
 
 [Term]
 id: KSC_M:00000157
@@ -1560,7 +1562,7 @@ name: Gray level index method
 def: "Design based stereology method proposed by Ziller to approximate the boundaries of a region, based on the gray level index coefficient. It can be addapted to other kinds of tissue classical staining methods." []
 is_a: nlx:152214 ! Design based stereology
 created_by: mihailbota
-remark: acronym: GLI
+synonym: "GLI" BROAD ACRONYM []
 
 [Term]
 id: KSC_M:00000184
@@ -1665,7 +1667,7 @@ name: Voltage clamp
 def: "Class of intracellular electrophysiological techniques where the trans-membrane difference of potential (voltage) is kept constant, and the ion currents are measured." []
 is_a: nlx_inv:090910 ! Intracellular recording
 created_by: mihailbota
-remark: acronym: VC
+synonym: "VC" BROAD ACRONYM []
 
 [Term]
 id: KSC_M:00000199
@@ -1673,7 +1675,7 @@ name: Two-electrode voltage clamp
 def: "Voltage clamp method that uses two intracellular electrodes instead of one, and is preferred for measuring high currents and for larger cells such as oocytes." []
 is_a: KSC_M:00000198 ! Voltage clamp
 created_by: mihailbota
-remark: acronym: TEVC
+synonym: "TEVC" BROAD ACRONYM []
 
 [Term]
 id: KSC_M:00000200
@@ -1682,7 +1684,7 @@ def: "Variation of the two-electrode voltage clamp method specifically designed 
 is_a: KSC_M:00000198 ! Voltage clamp
 relationship: modified_from KSC_M:00000200 ! Dual cell voltage clamp
 created_by: mihailbota
-remark: acronym: DCVC
+synonym: "DCVC" BROAD ACRONYM []
 
 [Term]
 id: KSC_M:00000201
@@ -1690,7 +1692,7 @@ name: Single electrode voltage clamp
 def: "Class of voltage clamp methods where a single intracellular electrod is used for both clamping the cell and for measurement. Used for small cells, or cells that are difficult to get to. Also used for study of plants cells." []
 is_a: KSC_M:00000198 ! Voltage clamp
 created_by: mihailbota
-remark: acronym: SEVC
+synonym: "SEVC" BROAD ACRONYM []
 
 [Term]
 id: KSC_M:00000202
@@ -1698,7 +1700,7 @@ name: Continuous single electrode voltage clamp method
 def: "Single electrode voltage clamp method where both measurement and clamping are performed in the same time." []
 is_a: KSC_M:00000201 ! Single electrode voltage clamp
 created_by: mihailbota
-remark: acronym: cSEVC
+synonym: "cSEVC" BROAD ACRONYM []
 
 [Term]
 id: KSC_M:00000203
@@ -1706,7 +1708,7 @@ name: Discontinuous single electrode voltage clamp method
 def: "Single electrode voltage clamp method where the sharp electrode is rapid switched between the measurement mode and the clamping mode. The cell membrane needs to be enzymatically removed." []
 is_a: KSC_M:00000201 ! Single electrode voltage clamp
 created_by: mihailbota
-remark: acronym: dSEVC
+synonym: "dSEVC" BROAD ACRONYM []
 
 [Term]
 id: KSC_M:00000204
@@ -1735,7 +1737,7 @@ name: Pulsed amperometry
 def: "Amperometry method where a working voltage is applied for a short period of time, followed by different potentials designed to clean the electrodes." []
 is_a: KSC_M:00000205 ! Amperometry
 created_by: mihailbota
-remark: acronym: PAD
+synonym: "PAD" BROAD ACRONYM []
 
 [Term]
 id: KSC_M:00000208
@@ -1752,7 +1754,7 @@ synonym: "Electroencephalography recording protocol" EXACT [birnlex:2293]
 xref: KSC_M:00000209 "Electroencephalography"
 is_a: birnlex:2272 ! Extracellular recording
 created_by: mihailbota
-remark: acronym: EEG
+synonym: "EEG" BROAD ACRONYM []
 
 [Term]
 id: KSC_M:00000210
@@ -1760,7 +1762,7 @@ name: Electrocortigraphy
 def: "Also known as intracranial EEG (iEEG), it is an invasive electrophysiological method designed to measure electrical activity at the level of the surface of cortex. The electrodes are placed directly onto the surface of the cerebral cortex." []
 is_a: birnlex:2272 ! Extracellular recording
 created_by: mihailbota
-remark: acronym: ECoG
+synonym: "ECoG" BROAD ACRONYM []
 
 [Term]
 id: KSC_M:00000211
